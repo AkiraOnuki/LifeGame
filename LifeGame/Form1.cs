@@ -26,7 +26,7 @@ namespace LifeGame
 
             InitializeComponent();
 
-            Initialyze();
+            Initialyze2();
         }
 
         public void Initialyze()
@@ -46,6 +46,40 @@ namespace LifeGame
             ViewShow();
         }
 
+        public void Initialyze2()
+        {
+            for (int l = 0; l < X_Max * Y_Max; ++l)
+            {
+                map[l] = 0;
+            }
+            map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max + 1] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2)] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + 1] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max - 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + 1] = 1;
+            ViewShow();
+        }
+
+        public void Anarayze()
+        {
+            string str = textBox1.Text;
+            for (int y = 0; y < Y_Valid; ++y)
+            {
+                for (int x = 0; x < X_Valid; ++x)
+                {
+                    bool check = str[X_Max * y + x] == '○';
+                    map[X_Max + (X_Max * y + x + 1)] = check ? 0 : 1;
+                }
+            }
+            buttonStop.Enabled = true;
+            buttonStart.Enabled = false;
+            timer1.Enabled = true;
+        }
+
         public void ViewShow()
         {
             string str = "";
@@ -53,7 +87,7 @@ namespace LifeGame
             {
                 for (int x = 1; x < X_Max - 1; ++x)
                 {
-                    int check = map[y * Y_Max + x];
+                    int check = map[y * X_Max + x];
                     if (check == 1)
                     {
                         str += "●";
@@ -214,6 +248,11 @@ namespace LifeGame
         private void buttonInit_Click(object sender, EventArgs e)
         {
             Initialyze();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Anarayze();
         }
     }
 }
