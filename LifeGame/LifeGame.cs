@@ -10,8 +10,61 @@ namespace LifeGame
     {
         int X_Valid ;
         int Y_Valid ;
-        int X_Max;
-        int Y_Max;
+        public int X_Max;
+        public int Y_Max;
+
+        public void Initialyze33(int[] map)
+        {
+            for (int l = 0; l < X_Max * Y_Max; ++l)
+            {
+                map[l] = 0;
+            }
+            map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max + 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) - 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max - 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + 1] = 1;
+        }
+
+        public void Initialyze55(int[] map)
+        {
+            for (int l = 0; l < X_Max * Y_Max; ++l)
+            {
+                map[l] = 0;
+            }
+            map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - X_Max - 2] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - X_Max - 1] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - X_Max] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - X_Max + 1] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - X_Max + 2] = 1;
+
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - 2] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - 1] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max + 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max + 2] = 1;
+
+            map[(Y_Max / 2 * X_Max + X_Max / 2) - 2] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - 1] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2)    ] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + 2] = 1;
+
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max - 2] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max - 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + 2] = 1;
+
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + X_Max - 2] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + X_Max - 1] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + X_Max    ] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + X_Max + 1] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + X_Max + 2] = 1;
+        }
 
         public LifeGame(int x, int y)
         {
