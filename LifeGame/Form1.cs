@@ -52,15 +52,35 @@ namespace LifeGame
             {
                 map[l] = 0;
             }
-            map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - 1] = 1;
-            map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - X_Max - 2] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - X_Max - 1] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - X_Max] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - X_Max + 1] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - X_Max + 2] = 1;
+
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - 2] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - 1] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max] = 1;
             //map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max + 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max + 2] = 1;
+
+            map[(Y_Max / 2 * X_Max + X_Max / 2) - 2] = 1;
             //map[(Y_Max / 2 * X_Max + X_Max / 2) - 1] = 1;
-            map[(Y_Max / 2 * X_Max + X_Max / 2)] = 1;
-            map[(Y_Max / 2 * X_Max + X_Max / 2) + 1] = 1;
-            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max - 1] = 1;
-            map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max] = 1;
-            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + 1] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2)    ] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + 2] = 1;
+
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max - 2] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max - 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max    ] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + 1] = 1;
+            map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + 2] = 1;
+
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + X_Max - 2] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + X_Max - 1] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + X_Max    ] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + X_Max + 1] = 1;
+            //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + X_Max + 2] = 1;
             ViewShow();
         }
 
@@ -99,73 +119,6 @@ namespace LifeGame
                 }
                 str += "\r\n";
             }
-            //string str = "";
-            //for (int y = 0; y < Y_Max; ++y)
-            //{
-            //    for (int x = 0; x < X_Max; ++x)
-            //    {
-            //        int check = map[y * Y_Max + x];
-
-            //        switch (check)
-            //        {
-            //            case 0:
-            //                str += "０";
-            //                break;
-            //            case 1:
-            //                str += "１";
-            //                break;
-            //            case 2:
-            //                str += "２";
-            //                break;
-            //            case 3:
-            //                str += "３";
-            //                break;
-            //            case 4:
-            //                str += "４";
-            //                break;
-            //            case 5:
-            //                str += "５";
-            //                break;
-            //            case 6:
-            //                str += "６";
-            //                break;
-            //            case 7:
-            //                str += "７";
-            //                break;
-            //            case 8:
-            //                str += "８";
-            //                break;
-            //            case 9:
-            //                str += "９";
-            //                break;
-            //            case 10:
-            //                str += "Ａ";
-            //                break;
-            //            case 11:
-            //                str += "Ｂ";
-            //                break;
-            //            case 12:
-            //                str += "Ｃ";
-            //                break;
-            //            case 13:
-            //                str += "Ｄ";
-            //                break;
-            //            case 14:
-            //                str += "Ｅ";
-            //                break;
-            //            case 15:
-            //                str += "Ｆ";
-            //                break;
-            //            case 16:
-            //                str += "Ｇ";
-            //                break;
-            //            default:
-            //                str += "●";
-            //                break;
-            //        }
-            //    }
-            //    str += "\r\n";
-            //}
             textBox1.Text = str;
         }
 
@@ -196,33 +149,41 @@ namespace LifeGame
             map[(Y_Max - 1) * X_Max] = map[Y_Max * X_Max - 2];
             map[Y_Max * X_Max - 1] = map[X_Max + 1];
 
+
+            int[] newMap = new int[X_Max * Y_Max];
+
             for (int y = 0; y < Y_Max; ++y)
             {
                 for (int x = 0; x < X_Max; ++x)
                 {
                     if (x > 0 && y > 0 && x < X_Max - 1 && y < Y_Max - 1)
                     {
-                        int check = map[y * Y_Max + x];
+                        int check = map[y * X_Max + x];
                         int A = map[(y - 1) * X_Max + (x - 1)] + map[(y - 1) * X_Max + (x)] + map[(y - 1) * X_Max + (x + 1)]
-                              + map[(y) * X_Max + (x - 1)] + map[(y) * X_Max + (x + 1)]
+                              + map[(y    ) * X_Max + (x - 1)]                              + map[(y    ) * X_Max + (x + 1)]
                               + map[(y + 1) * X_Max + (x - 1)] + map[(y + 1) * X_Max + (x)] + map[(y + 1) * X_Max + (x + 1)];
                         if (check == 1)
                         {
                             if (A <= 1 || A >= 4)
                             {
-                                map[y * Y_Max + x] = 0;
+                                newMap[y * Y_Max + x] = 0;
+                            }
+                            else
+                            {
+                                newMap[y * Y_Max + x] = 1;
                             }
                         }
                         else
                         {
                             if (A == 3)
                             {
-                                map[y * Y_Max + x] = 1;
+                                newMap[y * Y_Max + x] = 1;
                             }
                         }
                     }
                 }
             }
+            map = newMap;
             ViewShow();
         }
 
@@ -247,7 +208,7 @@ namespace LifeGame
 
         private void buttonInit_Click(object sender, EventArgs e)
         {
-            Initialyze();
+            Initialyze2();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
