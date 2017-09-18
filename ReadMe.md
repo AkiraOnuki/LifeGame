@@ -1,1 +1,1 @@
-windows10 VisualStudio2017�ō쐬
+windows10 VisualStudio2017で作成
