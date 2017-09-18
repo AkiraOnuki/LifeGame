@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System;using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -18,36 +17,18 @@ namespace LifeGame
         public Form1()
         {
             lg = new LifeGame(50, 50);
-            map = new int[52 * 52];
-            lg.Initialyze55(map);
-
+            lg.Initialyze55();
 
             InitializeComponent();
 
-            ViewShow(lg, map);
+            //ViewShow(lg);
 
         }
 
-        public void ViewShow(LifeGame lg, int[] map)
+        public void ViewShow(LifeGame lg)
         {
-            string str = "";
-            for (int y = 1; y < lg.Y_Max - 1; ++y)
-            {
-                for (int x = 1; x <lg. X_Max - 1; ++x)
-                {
-                    int check = map[y * lg.X_Max + x];
-                    if (check == 1)
-                    {
-                        str += "●";
-                    }
-                    else
-                    {
-                        str += "○";
-                    }
-                }
-                str += "\r\n";
-            }
-            textBox1.Text = str;
+            pictureBox1.Image = Image.FromStream(bitmap.ToBitmap(lg.map, 50, 50));
+            //textBox1.Text = lg.ToString();
         }
 
 
@@ -67,8 +48,31 @@ namespace LifeGame
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            map = lg.Calc(map);
-            ViewShow(lg, map);
+            lg.Calc();
+            //ViewShow(lg);
+            pictureBox1.Invalidate();
+        }
+
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawImage(Image.FromStream(bitmap.ToBitmap(lg.map, 50, 50)), new Rectangle(0, 0, 400, 400), new Rectangle(0, 0, 50, 50), GraphicsUnit.Pixel);
+        }
+
+        private void pictureBox1_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            timer1.Enabled = false;
+            Form2 frm = new Form2();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                lg.Initialyze(frm.pattern, e.X / 8, e.Y / 8);
+                pictureBox1.Invalidate();
+
+            }
         }
     }
 }

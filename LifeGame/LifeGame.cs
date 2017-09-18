@@ -6,19 +6,50 @@ using System.Threading.Tasks;
 
 namespace LifeGame
 {
-    public class LifeGame
+    public class LifeGame : Object
     {
         int X_Valid ;
         int Y_Valid ;
-        public int X_Max;
-        public int Y_Max;
+        int X_Max;
+        int Y_Max;
 
-        public void Initialyze33(int[] map)
+        public int[] map;
+
+        public LifeGame(int x, int y)
+        {
+            X_Valid = x;
+            Y_Valid = y;
+            X_Max = X_Valid + 2;
+            Y_Max = Y_Valid + 2;
+            map = new int[X_Max * Y_Max];
+        }
+
+        public void Initialyze(int[] pat, int x, int y)
+        {
+            --x;
+            --y;
+            int h = (int)Math.Sqrt(pat.GetLength(0));
+
+
+            for (int hy = 0; hy < h; ++hy)
+            {
+                for (int hx = 0; hx < h; ++hx)
+                {
+                    int map_s = (y * X_Valid + x) + hy * X_Valid + hx;
+                    int pat_s = hy * h + hx;
+                    map[map_s] = pat[pat_s];
+
+                }
+            }
+        }
+
+        public void Initialyze33()
         {
             for (int l = 0; l < X_Max * Y_Max; ++l)
             {
                 map[l] = 0;
             }
+
             map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max - 1] = 1;
             map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max] = 1;
             map[(Y_Max / 2 * X_Max + X_Max / 2) - X_Max + 1] = 1;
@@ -29,7 +60,7 @@ namespace LifeGame
             map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + 1] = 1;
         }
 
-        public void Initialyze55(int[] map)
+        public void Initialyze55()
         {
             for (int l = 0; l < X_Max * Y_Max; ++l)
             {
@@ -66,15 +97,30 @@ namespace LifeGame
             //map[(Y_Max / 2 * X_Max + X_Max / 2) + X_Max + X_Max + 2] = 1;
         }
 
-        public LifeGame(int x, int y)
+        public override string ToString()
         {
-            X_Valid = x;
-            Y_Valid = y;
-            X_Max = X_Valid + 2;
-            Y_Max = Y_Valid + 2;
+
+            string str = "";
+            for (int y = 1; y < Y_Max - 1; ++y)
+            {
+                for (int x = 1; x < X_Max - 1; ++x)
+                {
+                    int check = map[y * X_Max + x];
+                    if (check == 1)
+                    {
+                        str += "●";
+                    }
+                    else
+                    {
+                        str += "○";
+                    }
+                }
+                str += "\r\n";
+            }
+            return str;
         }
 
-        public int[] Calc(int[] map)
+            public void Calc()
         {
             for (int xl = 1; xl < X_Max - 1; ++xl)
             {
@@ -118,24 +164,24 @@ namespace LifeGame
                         {
                             if (A <= 1 || A >= 4)
                             {
-                                newMap[y * Y_Max + x] = 0;
+                                newMap[y * X_Max + x] = 0;
                             }
                             else
                             {
-                                newMap[y * Y_Max + x] = 1;
+                                newMap[y * X_Max + x] = 1;
                             }
                         }
                         else
                         {
                             if (A == 3)
                             {
-                                newMap[y * Y_Max + x] = 1;
+                                newMap[y * X_Max + x] = 1;
                             }
                         }
                     }
                 }
             }
-            return newMap;
+            map = newMap;
         }
 
     }
