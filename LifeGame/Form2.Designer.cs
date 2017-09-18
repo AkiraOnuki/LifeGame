@@ -59,7 +59,7 @@
             // button1_1
             // 
             this.button1_1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1_1.Location = new System.Drawing.Point(71, 39);
+            this.button1_1.Location = new System.Drawing.Point(12, 12);
             this.button1_1.Name = "button1_1";
             this.button1_1.Size = new System.Drawing.Size(50, 50);
             this.button1_1.TabIndex = 0;
@@ -70,7 +70,7 @@
             // button1_2
             // 
             this.button1_2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1_2.Location = new System.Drawing.Point(127, 39);
+            this.button1_2.Location = new System.Drawing.Point(68, 12);
             this.button1_2.Name = "button1_2";
             this.button1_2.Size = new System.Drawing.Size(50, 50);
             this.button1_2.TabIndex = 1;
@@ -81,7 +81,7 @@
             // button1_3
             // 
             this.button1_3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1_3.Location = new System.Drawing.Point(183, 39);
+            this.button1_3.Location = new System.Drawing.Point(124, 12);
             this.button1_3.Name = "button1_3";
             this.button1_3.Size = new System.Drawing.Size(50, 50);
             this.button1_3.TabIndex = 2;
@@ -92,7 +92,7 @@
             // button1_4
             // 
             this.button1_4.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1_4.Location = new System.Drawing.Point(239, 39);
+            this.button1_4.Location = new System.Drawing.Point(180, 12);
             this.button1_4.Name = "button1_4";
             this.button1_4.Size = new System.Drawing.Size(50, 50);
             this.button1_4.TabIndex = 3;
@@ -103,7 +103,7 @@
             // button1_5
             // 
             this.button1_5.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1_5.Location = new System.Drawing.Point(291, 39);
+            this.button1_5.Location = new System.Drawing.Point(232, 12);
             this.button1_5.Name = "button1_5";
             this.button1_5.Size = new System.Drawing.Size(50, 50);
             this.button1_5.TabIndex = 4;
@@ -114,7 +114,7 @@
             // button2_1
             // 
             this.button2_1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2_1.Location = new System.Drawing.Point(71, 95);
+            this.button2_1.Location = new System.Drawing.Point(12, 68);
             this.button2_1.Name = "button2_1";
             this.button2_1.Size = new System.Drawing.Size(50, 50);
             this.button2_1.TabIndex = 5;
@@ -125,7 +125,7 @@
             // button2_2
             // 
             this.button2_2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2_2.Location = new System.Drawing.Point(127, 95);
+            this.button2_2.Location = new System.Drawing.Point(68, 68);
             this.button2_2.Name = "button2_2";
             this.button2_2.Size = new System.Drawing.Size(50, 50);
             this.button2_2.TabIndex = 6;
@@ -136,7 +136,7 @@
             // button2_3
             // 
             this.button2_3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2_3.Location = new System.Drawing.Point(183, 95);
+            this.button2_3.Location = new System.Drawing.Point(124, 68);
             this.button2_3.Name = "button2_3";
             this.button2_3.Size = new System.Drawing.Size(50, 50);
             this.button2_3.TabIndex = 7;
@@ -147,7 +147,7 @@
             // button2_4
             // 
             this.button2_4.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2_4.Location = new System.Drawing.Point(239, 95);
+            this.button2_4.Location = new System.Drawing.Point(180, 68);
             this.button2_4.Name = "button2_4";
             this.button2_4.Size = new System.Drawing.Size(50, 50);
             this.button2_4.TabIndex = 8;
@@ -158,7 +158,7 @@
             // button2_5
             // 
             this.button2_5.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2_5.Location = new System.Drawing.Point(291, 95);
+            this.button2_5.Location = new System.Drawing.Point(232, 68);
             this.button2_5.Name = "button2_5";
             this.button2_5.Size = new System.Drawing.Size(50, 50);
             this.button2_5.TabIndex = 9;
@@ -169,7 +169,7 @@
             // button3_1
             // 
             this.button3_1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3_1.Location = new System.Drawing.Point(71, 148);
+            this.button3_1.Location = new System.Drawing.Point(12, 121);
             this.button3_1.Name = "button3_1";
             this.button3_1.Size = new System.Drawing.Size(50, 50);
             this.button3_1.TabIndex = 10;
@@ -180,7 +180,7 @@
             // button3_2
             // 
             this.button3_2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3_2.Location = new System.Drawing.Point(127, 148);
+            this.button3_2.Location = new System.Drawing.Point(68, 121);
             this.button3_2.Name = "button3_2";
             this.button3_2.Size = new System.Drawing.Size(50, 50);
             this.button3_2.TabIndex = 11;
@@ -191,7 +191,7 @@
             // button3_3
             // 
             this.button3_3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3_3.Location = new System.Drawing.Point(183, 148);
+            this.button3_3.Location = new System.Drawing.Point(124, 121);
             this.button3_3.Name = "button3_3";
             this.button3_3.Size = new System.Drawing.Size(50, 50);
             this.button3_3.TabIndex = 12;
@@ -202,7 +202,7 @@
             // button3_4
             // 
             this.button3_4.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3_4.Location = new System.Drawing.Point(239, 148);
+            this.button3_4.Location = new System.Drawing.Point(180, 121);
             this.button3_4.Name = "button3_4";
             this.button3_4.Size = new System.Drawing.Size(50, 50);
             this.button3_4.TabIndex = 13;
@@ -213,7 +213,7 @@
             // button3_5
             // 
             this.button3_5.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3_5.Location = new System.Drawing.Point(291, 148);
+            this.button3_5.Location = new System.Drawing.Point(232, 121);
             this.button3_5.Name = "button3_5";
             this.button3_5.Size = new System.Drawing.Size(50, 50);
             this.button3_5.TabIndex = 14;
@@ -224,7 +224,7 @@
             // button4_1
             // 
             this.button4_1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4_1.Location = new System.Drawing.Point(71, 204);
+            this.button4_1.Location = new System.Drawing.Point(12, 177);
             this.button4_1.Name = "button4_1";
             this.button4_1.Size = new System.Drawing.Size(50, 50);
             this.button4_1.TabIndex = 15;
@@ -235,7 +235,7 @@
             // button4_2
             // 
             this.button4_2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4_2.Location = new System.Drawing.Point(127, 204);
+            this.button4_2.Location = new System.Drawing.Point(68, 177);
             this.button4_2.Name = "button4_2";
             this.button4_2.Size = new System.Drawing.Size(50, 50);
             this.button4_2.TabIndex = 16;
@@ -246,7 +246,7 @@
             // button4_3
             // 
             this.button4_3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4_3.Location = new System.Drawing.Point(183, 204);
+            this.button4_3.Location = new System.Drawing.Point(124, 177);
             this.button4_3.Name = "button4_3";
             this.button4_3.Size = new System.Drawing.Size(50, 50);
             this.button4_3.TabIndex = 17;
@@ -257,7 +257,7 @@
             // button4_4
             // 
             this.button4_4.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4_4.Location = new System.Drawing.Point(239, 204);
+            this.button4_4.Location = new System.Drawing.Point(180, 177);
             this.button4_4.Name = "button4_4";
             this.button4_4.Size = new System.Drawing.Size(50, 50);
             this.button4_4.TabIndex = 18;
@@ -268,7 +268,7 @@
             // button4_5
             // 
             this.button4_5.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4_5.Location = new System.Drawing.Point(291, 204);
+            this.button4_5.Location = new System.Drawing.Point(232, 177);
             this.button4_5.Name = "button4_5";
             this.button4_5.Size = new System.Drawing.Size(50, 50);
             this.button4_5.TabIndex = 19;
@@ -279,7 +279,7 @@
             // button5_1
             // 
             this.button5_1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button5_1.Location = new System.Drawing.Point(71, 260);
+            this.button5_1.Location = new System.Drawing.Point(12, 233);
             this.button5_1.Name = "button5_1";
             this.button5_1.Size = new System.Drawing.Size(50, 50);
             this.button5_1.TabIndex = 20;
@@ -290,7 +290,7 @@
             // button5_2
             // 
             this.button5_2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button5_2.Location = new System.Drawing.Point(127, 260);
+            this.button5_2.Location = new System.Drawing.Point(68, 233);
             this.button5_2.Name = "button5_2";
             this.button5_2.Size = new System.Drawing.Size(50, 50);
             this.button5_2.TabIndex = 21;
@@ -301,7 +301,7 @@
             // button5_3
             // 
             this.button5_3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button5_3.Location = new System.Drawing.Point(183, 260);
+            this.button5_3.Location = new System.Drawing.Point(124, 233);
             this.button5_3.Name = "button5_3";
             this.button5_3.Size = new System.Drawing.Size(50, 50);
             this.button5_3.TabIndex = 22;
@@ -312,7 +312,7 @@
             // button5_4
             // 
             this.button5_4.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button5_4.Location = new System.Drawing.Point(239, 260);
+            this.button5_4.Location = new System.Drawing.Point(180, 233);
             this.button5_4.Name = "button5_4";
             this.button5_4.Size = new System.Drawing.Size(50, 50);
             this.button5_4.TabIndex = 23;
@@ -323,7 +323,7 @@
             // button5_5
             // 
             this.button5_5.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button5_5.Location = new System.Drawing.Point(291, 260);
+            this.button5_5.Location = new System.Drawing.Point(232, 233);
             this.button5_5.Name = "button5_5";
             this.button5_5.Size = new System.Drawing.Size(50, 50);
             this.button5_5.TabIndex = 24;
@@ -333,11 +333,11 @@
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(388, 172);
+            this.button26.Location = new System.Drawing.Point(321, 39);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(75, 23);
             this.button26.TabIndex = 25;
-            this.button26.Text = "button26";
+            this.button26.Text = "OK";
             this.button26.UseVisualStyleBackColor = true;
             this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
@@ -345,7 +345,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 347);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(424, 301);
             this.Controls.Add(this.button26);
             this.Controls.Add(this.button5_5);
             this.Controls.Add(this.button5_4);
@@ -373,8 +374,10 @@
             this.Controls.Add(this.button1_2);
             this.Controls.Add(this.button1_1);
             this.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Text = "パターンエディタ";
             this.ResumeLayout(false);
 
         }

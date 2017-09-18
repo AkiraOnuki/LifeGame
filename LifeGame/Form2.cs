@@ -12,10 +12,12 @@ namespace LifeGame
 {
     public partial class Form2 : Form
     {
+        //編集したパターンを返すプロパティ
         public int[] pattern
         {
             get
             {
+                //ボタンのテキストを調べパターンを作製
                 int[] ret = new int[25];
 
                 ret[0] =  button1_1.Text == "●" ? 1 : 0;
@@ -56,6 +58,7 @@ namespace LifeGame
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //ボタンがクリックされたらテキストを変える
             Button btn = sender as Button;
             if (btn.Text == "●")
                 btn.Text = "○";
@@ -65,6 +68,7 @@ namespace LifeGame
 
         private void button26_Click(object sender, EventArgs e)
         {
+            //ダイアログリザルトをOKにする
             DialogResult = DialogResult.OK;
         }
     }
