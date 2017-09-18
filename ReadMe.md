@@ -1,1 +1,5 @@
 windows10 VisualStudio2017で作成
+WindowsFormsプログラム
+
+
+ライフゲームをグラフィックで表示
